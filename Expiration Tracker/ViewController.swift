@@ -16,11 +16,11 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         navigationItem.title = "Expiration Tracker"
         
-        var values = [ItemWithDate]()
+        var values = [Item]()
         
         for _ in 0...5 {
         
-            values.append(ItemWithDate(value: "Hello", description: "Hello world", expirationDate: "dummy expiration data"))
+            values.append(Item(value: "Hello", description: "Hello world", expirationDate: "dummy expiration data"))
         }
         self.navigationController?.pushViewController(ItemViewController.init(values: values), animated: true)
     }
